@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="80" viewBox="0 0 800 80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;display=swap');
+      .text {
+        font-family: 'Cinzel', serif;
+        font-size: 12px;
+        font-weight: 700;
+        fill: #c5a059;
+        text-anchor: middle;
+        letter-spacing: 5px;
+      }
+      .line {
+        stroke: url(#goldGradient);
+        stroke-width: 1.5;
+      }
+    </style>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9A7B3E" />
+      <stop offset="50%" stop-color="#C5A059" />
+      <stop offset="100%" stop-color="#F3E5AB" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="80" fill="#0d0d0d" />
+  <line x1="50" y1="25" x2="330" y2="25" class="line" />
+  <polygon points="400,22 403,25 400,28 397,25" fill="#C5A059" />
+  <line x1="470" y1="25" x2="750" y2="25" class="line" />
+  <text x="400" y="55" class="text">VALAR MORGHULIS • VALAR DOHAERIS</text>
+</svg>

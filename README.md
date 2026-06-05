@@ -1,6 +1,6 @@
 <!-- Animated Hero Banner -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=111111&customColorList=c5a059,70a3c4,111111&height=220&section=header&text=Rohit%20Kumar%20Patil&fontSize=50&fontColor=ffffff&desc=AI%20Engineer%20%7C%20Full%20Stack%20Developer&descSize=20&descColor=c5a059" width="100%" />
+  <img src="https://raw.githubusercontent.com/PatilRohit03/PatilRohit03/main/got-banner.svg" width="100%" />
 </div>
 
 <!-- Typing Animation -->
@@ -198,5 +198,5 @@ I am actively seeking **internships** and **full-time opportunities** where I ca
 <br />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=111111&customColorList=4facfe,c5a059,111111&height=120&section=footer" width="100%" />
+  <img src="https://raw.githubusercontent.com/PatilRohit03/PatilRohit03/main/got-footer.svg" width="100%" />
 </div>
