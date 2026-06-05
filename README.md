@@ -157,32 +157,10 @@ I am actively seeking **internships** and **full-time opportunities** where I ca
   </table>
 </div>
 
-### 📈 Advanced GitHub Metrics
-<div align="center">
-  <img src="https://raw.githubusercontent.com/PatilRohit03/PatilRohit03/main/github-metrics.svg" alt="GitHub Metrics Dashboard" width="100%" />
-</div>
-
 ### 📈 Contribution Activity Graph
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=PatilRohit03&bg_color=050505&color=ffffff&line=00f2fe&point=4facfe&area=true&hide_border=false&border_color=00f2fe" width="100%" alt="Contribution Graph" />
 </div>
-
-### 🐍 Contribution Snake
-<div align="center">
-  <img src="https://raw.githubusercontent.com/PatilRohit03/PatilRohit03/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" width="100%" />
-</div>
-
----
-
-## 📝 Coding Activity & LeetCode Stats
-
-### 💻 WakaTime Coding Activity
-<!--START_SECTION:waka-->
-<!--END_SECTION:waka-->
-
-### 🏆 LeetCode Stats
-<!-- leetcode:start -->
-<!-- leetcode:end -->
 
 ---
 
