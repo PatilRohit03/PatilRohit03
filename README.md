@@ -96,27 +96,43 @@ I am actively seeking **internships** and **full-time opportunities** where I ca
 
 <table border="0" width="100%">
   <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/PatilRohit03/Secure-Enterprise-Knowledge-Assistant">
-        <img src="https://github-readme-stats.vercel.app/api/pin?username=PatilRohit03&repo=Secure-Enterprise-Knowledge-Assistant&bg_color=111111&title_color=c5a059&icon_color=70a3c4&text_color=ffffff&border_color=c5a059" alt="Secure Enterprise Knowledge Assistant" width="100%"/>
-      </a>
+    <td width="50%" valign="top">
+      <h3>🛡️ Secure Enterprise Knowledge Assistant</h3>
+      <p>An enterprise-grade, secure knowledge base powered by Retrieval-Augmented Generation (RAG) and multi-agent systems.</p>
+      <p>
+        <a href="https://github.com/PatilRohit03/Secure-Enterprise-Knowledge-Assistant">
+          <img src="https://img.shields.io/badge/Repository-Link-C5A059?style=flat-square&logo=github&logoColor=111111" alt="Repo Link" />
+        </a>
+      </p>
     </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/PatilRohit03/customer-is-god">
-        <img src="https://github-readme-stats.vercel.app/api/pin?username=PatilRohit03&repo=customer-is-god&bg_color=111111&title_color=c5a059&icon_color=70a3c4&text_color=ffffff&border_color=c5a059" alt="Customer Is God" width="100%"/>
-      </a>
+    <td width="50%" valign="top">
+      <h3>🔱 Customer Is God</h3>
+      <p>A customer analytics and satisfaction tracking engine powered by sentiment analysis and NLP pipelines.</p>
+      <p>
+        <a href="https://github.com/PatilRohit03/customer-is-god">
+          <img src="https://img.shields.io/badge/Repository-Link-C5A059?style=flat-square&logo=github&logoColor=111111" alt="Repo Link" />
+        </a>
+      </p>
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center">
-      <a href="https://github.com/PatilRohit03/jan-suvidha-portal">
-        <img src="https://github-readme-stats.vercel.app/api/pin?username=PatilRohit03&repo=jan-suvidha-portal&bg_color=111111&title_color=c5a059&icon_color=70a3c4&text_color=ffffff&border_color=c5a059" alt="Jan Suvidha Portal" width="100%"/>
-      </a>
+    <td width="50%" valign="top">
+      <h3>🏛️ Jan Suvidha Portal</h3>
+      <p>A public grievance redressal and civil utility portal built with modern Full-Stack components.</p>
+      <p>
+        <a href="https://github.com/PatilRohit03/jan-suvidha-portal">
+          <img src="https://img.shields.io/badge/Repository-Link-70a3c4?style=flat-square&logo=github&logoColor=111111" alt="Repo Link" />
+        </a>
+      </p>
     </td>
-    <td width="50%" align="center">
-      <a href="https://github.com/PatilRohit03/SmartRoad-and-civic-system">
-        <img src="https://github-readme-stats.vercel.app/api/pin?username=PatilRohit03&repo=SmartRoad-and-civic-system&bg_color=111111&title_color=c5a059&icon_color=70a3c4&text_color=ffffff&border_color=c5a059" alt="SmartRoad & Civic System" width="100%"/>
-      </a>
+    <td width="50%" valign="top">
+      <h3>🛣️ SmartRoad & Civic System</h3>
+      <p>An IoT-enabled road damage detection and reporting pipeline leveraging YOLOv8 and computer vision.</p>
+      <p>
+        <a href="https://github.com/PatilRohit03/SmartRoad-and-civic-system">
+          <img src="https://img.shields.io/badge/Repository-Link-70a3c4?style=flat-square&logo=github&logoColor=111111" alt="Repo Link" />
+        </a>
+      </p>
     </td>
   </tr>
 </table>
@@ -125,37 +141,36 @@ I am actively seeking **internships** and **full-time opportunities** where I ca
 
 ## 📊 Analytics & Insights
 
+### 📈 Advanced GitHub Metrics
 <div align="center">
-  <table border="0">
-    <tr>
-      <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=PatilRohit03&show_icons=true&bg_color=111111&title_color=c5a059&icon_color=70a3c4&text_color=ffffff&border_color=c5a059&hide_border=false" alt="GitHub Stats" height="200" />
-      </td>
-      <td align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=PatilRohit03&background=111111&fire=c5a059&ring=70a3c4&currStreakLabel=ffffff&sideNums=ffffff&sideLabels=ffffff&dates=70a3c4&border=c5a059" alt="GitHub Streak Stats" height="200" />
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs?username=PatilRohit03&layout=compact&bg_color=111111&title_color=c5a059&icon_color=70a3c4&text_color=ffffff&border_color=c5a059&hide_border=false" alt="Top Languages" width="350" />
-      </td>
-      <td align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=PatilRohit03&theme=nord" alt="Profile Details Card" height="200" />
-      </td>
-    </tr>
-  </table>
+  <img src="https://raw.githubusercontent.com/PatilRohit03/PatilRohit03/main/github-metrics.svg" alt="GitHub Metrics Dashboard" width="100%" />
 </div>
 
-### 📈 Contribution Activity Graph
+<br />
+
+<!-- Note: Snake Animation will run after first Action execution -->
+### 🐍 Contribution Snake
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PatilRohit03&bg_color=111111&color=ffffff&line=c5a059&point=70a3c4&area=true&hide_border=false&border_color=c5a059" width="100%" alt="Contribution Graph" />
+  <img src="https://raw.githubusercontent.com/PatilRohit03/PatilRohit03/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" width="100%" />
 </div>
+
+---
+
+## 📝 Coding Activity & LeetCode Stats
+
+### 💻 WakaTime Coding Activity
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+### 🏆 LeetCode Stats
+<!-- leetcode:start -->
+<!-- leetcode:end -->
 
 ---
 
 ## 💡 Dev Quote
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dynamic Dev Quote" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=nord" alt="Dynamic Dev Quote" />
 </div>
 
 ---
