@@ -1,0 +1,139 @@
+name: LeetCode Stats Auto Update
+
+on:
+  schedule:
+    - cron: "0 1 * * *" # Runs daily at 1:00 AM
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Fetch LeetCode Stats & Update README
+        run: |
+          python - <<'EOF'
+          import requests
+          import re
+
+          username = "PatilRohit03"
+          url = "https://leetcode.com/graphql/"
+          query = """
+          query userProblemsSolved($username: String!) {
+            allQuestionsCount {
+              difficulty
+              count
+            }
+            matchedUser(username: $username) {
+              submitStats {
+                acSubmissionNum {
+                  difficulty
+                  count
+                }
+              }
+            }
+          }
+          """
+          try:
+              response = requests.post(url, json={"query": query, "variables": {"username": username}})
+              data = response.json()
+              
+              user_stats = data["data"]["matchedUser"]["submitStats"]["acSubmissionNum"]
+              all_questions = data["data"]["allQuestionsCount"]
+              
+              stats = {item["difficulty"]: item["count"] for item in user_stats}
+              totals = {item["difficulty"]: item["count"] for item in all_questions}
+              
+              solved_all = stats.get("All", 0)
+              total_all = totals.get("All", 0)
+              solved_easy = stats.get("Easy", 0)
+              total_easy = totals.get("Easy", 0)
+              solved_medium = stats.get("Medium", 0)
+              total_medium = totals.get("Medium", 0)
+              solved_hard = stats.get("Hard", 0)
+              total_hard = totals.get("Hard", 0)
+              
+              easy_pct = (solved_easy / total_easy) * 100 if total_easy else 0
+              medium_pct = (solved_medium / total_medium) * 100 if total_medium else 0
+              hard_pct = (solved_hard / total_hard) * 100 if total_hard else 0
+              
+              def make_bar(pct):
+                  filled = int(pct / 10)
+                  return "█" * filled + "░" * (10 - filled)
+                  
+              stats_markdown = f"""
+          <div align="center">
+            <table border="0">
+              <tr>
+                <td><b>Difficulty</b></td>
+                <td><b>Solved</b></td>
+                <td><b>Progress Bar</b></td>
+                <td><b>Percentage</b></td>
+              </tr>
+              <tr>
+                <td>🟢 Easy</td>
+                <td>{solved_easy} / {total_easy}</td>
+                <td><code>{make_bar(easy_pct)}</code></td>
+                <td>{easy_pct:.1f}%</td>
+              </tr>
+              <tr>
+                <td>🟡 Medium</td>
+                <td>{solved_medium} / {total_medium}</td>
+                <td><code>{make_bar(medium_pct)}</code></td>
+                <td>{medium_pct:.1f}%</td>
+              </tr>
+              <tr>
+                <td>🔴 Hard</td>
+                <td>{solved_hard} / {total_hard}</td>
+                <td><code>{make_bar(hard_pct)}</code></td>
+                <td>{hard_pct:.1f}%</td>
+              </tr>
+              <tr>
+                <td>🔥 <b>Total</b></td>
+                <td><b>{solved_all} / {total_all}</b></td>
+                <td><code>{make_bar((solved_all/total_all)*100)}</code></td>
+                <td><b>{((solved_all/total_all)*100):.1f}%</b></td>
+              </tr>
+            </table>
+          </div>
+          """
+              
+              with open("README.md", "r", encoding="utf-8") as f:
+                  content = f.read()
+                  
+              pattern = r"<!-- leetcode:start -->.*?<!-- leetcode:end -->"
+              replacement = f"<!-- leetcode:start -->\\n{stats_markdown}\\n<!-- leetcode:end -->"
+              updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+              
+              with open("README.md", "w", encoding="utf-8") as f:
+                  f.write(updated_content)
+                  
+              print("LeetCode stats successfully updated in README.md")
+          except Exception as e:
+              print(f"Error updating LeetCode stats: {e}")
+          EOF
+
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore: update leetcode statistics [skip ci]"
+            git push
+          else
+            echo "No changes in LeetCode stats"
+          fi

@@ -1,0 +1,28 @@
+name: WakaTime Coding Activity
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # Runs daily at 2:00 AM
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-waka:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Update WakaTime README
+        uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_OS: "true"
+          SHOW_PROJECTS: "true"
+          SHOW_TIME: "true"
+          SHOW_LINES_OF_CODE: "true"
+          SHOW_DAYS_OF_WEEK: "true"
+          SHOW_LOC_CHART: "true"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
