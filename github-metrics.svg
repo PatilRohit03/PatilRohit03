@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="120" viewBox="0 0 480 120">
-  <rect width="478" height="118" x="1" y="1" rx="6" fill="#111111" stroke="#c5a059" stroke-width="1.5"/>
-  <text x="20" y="35" font-family="'Cinzel', serif, sans-serif" font-size="18" font-weight="bold" fill="#c5a059">⚔️ VALYRIAN METRICS</text>
-  <text x="20" y="65" font-family="sans-serif" font-size="14" fill="#ffffff">Repositories: 26</text>
-  <text x="20" y="85" font-family="sans-serif" font-size="14" fill="#ffffff">Contributions: 50+</text>
-  <text x="240" y="65" font-family="sans-serif" font-size="14" fill="#70a3c4">House: Stark</text>
-  <text x="240" y="85" font-family="sans-serif" font-size="14" fill="#70a3c4">Motto: Winter is Coding</text>
+  <rect width="478" height="118" x="1" y="1" rx="6" fill="#0f0d0e" stroke="#d4af37" stroke-width="1.5"/>
+  <text x="20" y="35" font-family="'Yatra One', serif, sans-serif" font-size="18" font-weight="bold" fill="#d4af37">🏹 VALYRIAN ALGORITHMS</text>
+  <text x="20" y="65" font-family="sans-serif" font-size="14" fill="#f7f5f0">Repositories: 26</text>
+  <text x="20" y="85" font-family="sans-serif" font-size="14" fill="#f7f5f0">Contributions: 50+</text>
+  <text x="240" y="65" font-family="sans-serif" font-size="14" fill="#ff9933">Allies: Open Source</text>
+  <text x="240" y="85" font-family="sans-serif" font-size="14" fill="#ff9933">Dharma: Winter is Coding</text>
 </svg>

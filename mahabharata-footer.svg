@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="80" viewBox="0 0 800 80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Yatra+One&amp;display=swap');
+      .text {
+        font-family: 'Yatra One', serif;
+        font-size: 14px;
+        fill: #d4af37;
+        text-anchor: middle;
+        letter-spacing: 3px;
+        filter: drop-shadow(0px 2px 4px rgba(212, 175, 55, 0.3));
+      }
+      .line {
+        stroke: url(#goldGradient);
+        stroke-width: 1.5;
+      }
+    </style>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b8860b" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#ffd700" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="80" fill="#0f0d0e" />
+  <line x1="50" y1="25" x2="330" y2="25" class="line" />
+  <polygon points="400,22 403,25 400,28 397,25" fill="#d4af37" />
+  <line x1="470" y1="25" x2="750" y2="25" class="line" />
+  <text x="400" y="55" class="text">यतो धर्मस्ततो जयः</text>
+</svg>
