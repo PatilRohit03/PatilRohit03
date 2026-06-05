@@ -15,6 +15,6 @@ Final-year Computer Science and Engineering (AI & ML) student passionate about A
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-[![](https://komarev.com/ghpvc/?username=patilrohit03&icon=0&color=0)](https://visitcount.itsvg.in)
+[![](https://github.com/ghpvc/?username=patilrohit03&icon=0&color=0)](https://visitcount.itsvg.in)
 
 
